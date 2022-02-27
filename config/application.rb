@@ -18,5 +18,14 @@ module ChaTime
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    Rails.application.config.generators do |g|
+      # g.system_tests        nil
+      # g.orm                 :active_record, primary_key_type: :uuid
+      # g.fixture_replacement :factory_bot
+      g.assets              nil
+      # g.helper              false
+      g.stylesheets         false
+      g.json                false
+    end
   end
 end
