@@ -25,7 +25,7 @@ module ChaTime
       g.assets              nil
       # g.helper              false
       g.stylesheets         false
-      g.json                false
+      g.jbuilder            false
     end
   end
 end

@@ -9,14 +9,13 @@
         <% end %>
       </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <% end %>  
+  <h3>Add room</h3>
+  <div class="form-floating mb-3 flex col-7">     
+    <%= form.text_field :name, class:"form-control overflow-auto", placeholder:"Enter a room name", id:"floatingTextarea" %>
+    <%= form.label :Room_name %>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <div class="mb-3">
+    <%= form.submit "Add room", class:"btn btn-primary " %>
+  </div>  
 <% end %>
