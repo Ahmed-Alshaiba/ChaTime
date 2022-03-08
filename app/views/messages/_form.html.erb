@@ -11,22 +11,10 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
-  </div>
+  <%= form.hidden_field :room_id, value: @room.id %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :room_id %>
-    <%= form.text_field :room_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="input-group position-absolute bottom-0 start-50 translate-middle-x mb-3">
+    <%= form.text_field :content, class:"form-control", placeholder:"Enter a message", autocomplete: "off" %>
+    <%= form.submit "Send message", class: "btn btn-success", id: "inputGroup-sizing-default"%>
   </div>
 <% end %>
